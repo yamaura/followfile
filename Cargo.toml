@@ -11,7 +11,7 @@ repository = "https://github.com/yamaura/followfile"
 readme = "README.md"
 keywords = []
 categories = []
-include = ["src/**/*.rs", "README.md", "LICENSE"]
+include = ["src/**/*.rs", "examples/**/*.rs", "README.md", "LICENSE"]
 
 [package.metadata.release]
 push = false
