@@ -22,13 +22,16 @@ tag-message = "{{tag_name}}"
 [package.metadata.docs.rs]
 all-features = true
 
+[dependencies]
+clap = { version = "4.5.4", features = ["derive"], optional = true }
+
 [dependencies.tokio]
 optional = true
 version = "1.37.0"
 features = ["time"]
 
 [features]
-tail = ["tokio/macros", "tokio/rt", "tokio/fs", "tokio/io-util"]
+tail = ["tokio/macros", "tokio/rt", "tokio/fs", "tokio/io-util", "dep:clap"]
 
 [[example]]
 name = "tail"
